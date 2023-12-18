@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "sensor/v0.1/sensor-runtime",
+    "title": "Sensor Runtime",
+    "description": "Sensor Runtime",
+    "type": "object",
+    "visible": false,
+    "properties": {
+        "machine_state": {
+            "id": "sensor-v0.1-sensor-runtime-machine-state",
+            "type": "array",
+            "title": "Machine Status",
+            "description": "Current status of the machine (Online_Idle, Run, Online_Error, Online_Maintenance, Setup, Testing)",
+            "default": [
+                "Online_Idle",
+                "Run",
+                "Online_Error",
+                "Online_Maintenance",
+                "Setup",
+                "Testing"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_state_from_smartbox": {
+            "id": "sensor-v0.1-sensor-runtime-machine-state-from-smartbox",
+            "type": "array",
+            "title": "Machine Status from Smartbox",
+            "description": "Current status of the machine according to smartbox (Offline_Idle, Offline_Error, Offline_Maintenance)",
+            "default": [
+                "Offline_Idle",
+                "Offline_Error",
+                "Offline_Maintenance"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "ambient_operating_temperature": {
+            "id": "sensor-v0.1-sensor-runtime-ambient-operating-temperature",
+            "type": "number",
+            "title": "Ambient operating temperature",
+            "description": "Temperature in °C",
+            "unit": "°C",
+            "readOnly": false,
+            "visible": false
+        },
+        "relative_humidity": {
+            "id": "sensor-v0.1-sensor-runtime-relative-humidity",
+            "type": "number",
+            "title": "Relative humidity",
+            "description": "Humidity in percentage",
+            "unit": "%",
+            "readOnly": false,
+            "visible": false
+        },
+        "dustiness": {
+            "id": "sensor-v0.1-sensor-runtime-dustiness",
+            "type": "number",
+            "title": "Dust Density",
+            "description": "Dust density in mg/m³",
+            "unit": "mg/m³",
+            "readOnly": false,
+            "visible": false
+        },
+        "ambient_noise": {
+            "id": "sensor-v0.1-sensor-runtime-ambient-noise",
+            "type": "number",
+            "title": "Noise",
+            "description": "Noise in dB",
+            "unit": "dB",
+            "readOnly": false,
+            "visible": false
+        }
+    },
+    "required": [
+        "machine_state",
+        "machine_state_from_smartbox"
+    ]
+}

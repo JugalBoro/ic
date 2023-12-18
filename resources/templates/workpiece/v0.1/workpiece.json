@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "workpiece/v0.1/workpiece",
+  "title": "Workpiece",
+  "description": "Workpiece template for IFF",
+  "type": "object",
+  "group": "Workpiece",
+  "metadata": {
+    "type": "workpiece"
+  },
+  "properties": {
+    "metadata": {
+      "title": "Metadata",
+      "$ref": "workpiece/v0.1/workpiece-metadata.json"
+    }
+  }
+}

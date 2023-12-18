@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "filter/v0.1/filter-relationships",
+  "title": "Filter relationships",
+  "description": "Filter Relationsships",
+  "type": "object",
+  "properties": {
+    "filter-catridge": {
+      "title": "Filter Catrigde",
+      "type": "array",
+      "items": {
+        "$ref": "filter-catridge/v0.1/filter-catridge.json"
+      }
+    }
+  }
+}

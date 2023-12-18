@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "filter-cartridge/v0.1/filter-cartridge",
+  "title": "Filter cartridge",
+  "description": "Filter cartridge template for IFF",
+  "type": "object",
+  "group": "Filter",
+  "metadata": {
+    "type": "filter-catridge"
+  },
+  "properties": {
+    "metadata": {
+      "title": "Identification",
+      "$ref": "filter-cartridge/v0.1/filter-cartridge-metadata.json"
+    }
+  }
+}

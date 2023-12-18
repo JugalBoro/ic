@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/machine-identification",
+  "title": "Machine Identification",
+  "description": "A machine can identify with this object itself.",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "alias": {
+      "id": "base-objects-v0.1-machine-identification-alias",
+      "type": "string",
+      "title": "Alias of the asset",
+      "placeholder": "Enter an alias for the asset",
+      "description": "Alternate name of the asset",
+      "readOnly": false,
+      "visible": true
+    },
+    "product_name": {
+      "id": "base-objects-v0.1-machine-identification-product-name",
+      "type": "string",
+      "title": "Manufacturer's product name",
+      "placeholder": "Enter the product name",
+      "description": "Name of the asset from the manufacturer",
+      "readOnly": false,
+      "visible": true
+    },
+    "asset_serial_number": {
+      "id": "base-objects-v0.1-machine-identification-asset-serial-number",
+      "type": "string",
+      "title": "Serial number",
+      "placeholder": "Enter the serial number",
+      "description": "Serial number of asset",
+      "readOnly": false,
+      "visible": true
+    },
+    "product_icon": {
+      "id": "base-objects-v0.1-machine-identification-product-icon",
+      "type": "object",
+      "title": "Product Icon",
+      "contentEncoding": "base64",
+      "contentMediaType": "image/png",
+      "placeholder": "Upload a product icon",
+      "description": "The production icon of the asset",
+      "readOnly": false,
+      "visible": true
+    },
+    "manufacturing_year": {
+      "id": "base-objects-v0.1-machine-identification-manufacturing-year",
+      "type": "number",
+      "unit": "year",
+      "title": "Year of manufacturing",
+      "description": "The manufacturer year of the asset",
+      "placeholder": "Enter the manufacturing year in YYYY format",
+      "readOnly": false,
+      "visible": true
+    },
+    "documentation": {
+      "id": "base-objects-v0.1-machine-identification-documentation",
+      "type": "object",
+      "title": "Manual",
+      "contentEncoding": "base64",
+      "contentMediaType": "application/pdf",
+      "description": "The legally required documentation for the machine",
+      "placeholder": "Upload the documentation in pdf format",
+      "readOnly": false,
+      "visible": true
+    },
+    "asset_communication_protocol": {
+      "id": "base-objects-v0.1-machine-identification-asset-communication-protocol",
+      "type": "array",
+      "title": "Communication protocol",
+      "description": "The communication protocol of the asset",
+      "placeholder": "Select a protocol",
+      "enum": [
+        "opc-ua",
+        "mqtt",
+        "modbus",
+        "http"
+      ],
+      "readOnly": false,
+      "visible": true
+    },
+    "ce_marking": {
+      "id": "base-objects-v0.1-machine-identification-ce-marking",
+      "type": "object",
+      "title": "CE-Marking",
+      "description": "The ce-marking of the asset",
+      "contentEncoding": "base64",
+      "contentMediaType": "application/pdf",
+      "placeholder": "Upload ce-marking documentation in pdf format",
+      "readOnly": false,
+      "visible": true
+    }
+  },
+  "required": [
+    "product_name",
+    "manufacturing_year",
+    "asset_communication_protocol",
+    "ce_marking",
+    "documentation",
+    "asset_serial_number"
+  ]
+}

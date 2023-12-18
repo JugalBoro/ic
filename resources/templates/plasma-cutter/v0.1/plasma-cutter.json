@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "plasma-cutter/v0.1/plasma-cutter",
+  "title": "Plasma Cutter",
+  "description": "Plasma Cutter template for IFF",
+  "type": "object",
+  "group": "Plasma Cutter",
+  "metadata": {
+    "type": "plasma"
+  },
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "title": "Metadata",
+      "$ref": "plasma-cutter/v0.1/plasma-cutter-metadata.json"
+    },
+    "parameters": {
+      "type": "object",
+      "title": "Parameters",
+      "$ref": "plasma-cutter/v0.1/plasma-cutter-parameter.json"
+    }
+  }
+}

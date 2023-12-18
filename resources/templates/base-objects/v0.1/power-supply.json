@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/power-supply",
+  "title": "Power",
+  "description": "IFF base object for power of a machine",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "supply_voltage": {
+      "id": "base-objects-v0.1-power-supply-voltage-max",
+      "type": "number",
+      "title": "Supply voltage (max.)",
+      "description": "Supply voltage",
+      "unit": "V",
+      "placeholder": "Enter the max supply voltage",
+      "readOnly": false,
+      "visible": true
+    },
+    "frequency": {
+      "id": "base-objects-v0.1-power-frequency-max",
+      "type": "number",
+      "title": "Frequency (max.)",
+      "description": "Frequency",
+      "unit": "Hz",
+      "placeholder": "Enter the max frequency",
+      "readOnly": false,
+      "visible": true
+    },
+    "voltage_type": {
+      "id": "base-objects-v0.1-power-voltage-type",
+      "type": "array",
+      "title": "Voltage type",
+      "description": "Voltage type",
+      "placeholder": "Enter Voltage type",
+      "enum": [
+        "AC",
+        "DC",
+        "3-phase AC"
+      ],
+      "readOnly": false,
+      "visible": true
+    },
+    "electric_power": {
+      "id": "base-objects-v0.1-power-electric-power-max",
+      "type": "number",
+      "title": "Electrical Power (max.)",
+      "description": "Electrical Power",
+      "unit": "W",
+      "placeholder": "Enter the max electrical power",
+      "readOnly": false,
+      "visible": true
+    }
+  },
+  "required": [
+    "supply_voltage",
+    "frequency",
+    "voltage_type",
+    "electric_power"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "plasma-source/v0.1/plasma-source-parameter",
+  "title": "Plasma Source Parameter",
+  "description": "Plasma Source Parameter",
+  "type": "object",
+  "properties": {
+    "operation_conditions": {
+      "title": "Operation Conditions",
+      "$ref": "base-objects/v0.1/operation-conditions.json"
+    },
+    "plasma_source_runtime": {
+      "title": "Plasma Source Runtime",
+      "$ref": "plasma-source/v0.1/plasma-source-runtime.json"
+    },
+    "power_supply": {
+      "title": "Power Supply",
+      "$ref": "base-objects/v0.1/power-supply.json"
+    },
+    "power_supply_runtime": {
+      "title": "Power Supply Runtime",
+      "$ref": "base-objects/v0.1/power-supply-runtime.json"
+    }
+  }
+}

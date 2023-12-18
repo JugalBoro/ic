@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "filter/v0.1/filter-parameter",
+  "title": "Filter parameter",
+  "description": "Filter parameter",
+  "type": "object",
+  "properties": {
+    "operation_conditions": {
+      "title": "Operation Conditions",
+      "$ref": "base-objects/v0.1/operation-conditions.json"
+    },
+    "filter_runtime": {
+      "title": "Filter Runtime",
+      "$ref": "filter/v0.1/filter-runtime.json"
+    },
+    "power_supply": {
+      "title": "Power Supply",
+      "$ref": "base-objects/v0.1/power-supply.json"
+    },
+    "power_supply_runtime": {
+      "title": "Power Supply Runtime",
+      "$ref": "base-objects/v0.1/power-supply-runtime.json"
+    }
+  }
+}

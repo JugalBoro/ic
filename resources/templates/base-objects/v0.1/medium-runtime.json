@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/medium-runtime",
+  "title": "Medium Runtime",
+  "description": "Material Medium, E.g Gas, Liquids.",
+  "type": "object",
+  "visible": false,
+  "properties": {
+    "medium_name": {
+      "id": "base-objects-v0.1-medium-runtime-medium-name",
+      "type": "string",
+      "title": "Medium name",
+      "description": "Name of the medium for eg. Oxygen",
+      "readOnly": false,
+      "visible": false
+    },
+    "input_pressure": {
+      "id": "base-objects-v0.1-medium-runtime-input-pressure",
+      "type": "number",
+      "title": "Medium pressure input",
+      "description": "The pressure of the medium in bar",
+      "unit": "bar",
+      "readOnly": false,
+      "visible": false
+    },
+    "static_input_pressure": {
+      "id": "base-objects-v0.1-medium-runtime-static-input-pressure",
+      "type": "number",
+      "title": "Static medium pressure input",
+      "description": "The Static pressure input of the medium in bar",
+      "unit": "bar",
+      "readOnly": false,
+      "visible": false
+    },
+    "temperature": {
+      "id": "base-objects-v0.1-medium-runtime-temperature",
+      "type": "number",
+      "title": "Temperature",
+      "description": "The temperature of the medium in °C",
+      "unit": "°C",
+      "readOnly": false,
+      "visible": false
+    },
+    "volume_flow_rate": {
+      "id": "base-objects-v0.1-medium-runtime-volume-flow-rate",
+      "type": "number",
+      "title": "Medium volume flow rate",	
+      "description": "The volume flow rate of the medium in m³/h",
+      "unit": "m³/h",
+      "readOnly": false,
+      "visible": false
+    },
+    "particle_count": {
+      "id": "base-objects-v0.1-medium-runtime-particle-count",
+      "type": "number",
+      "title": "Particle count",
+      "description": "The particle count of the medium in %",
+      "unit": "%",
+      "readOnly": false,
+      "visible": false
+    },
+    "humidity_content": {
+      "id": "base-objects-v0.1-medium-runtime-humidity-content",
+      "type": "number",
+      "title": "Humidity content",
+      "description": "The humidity content of the medium in %",
+      "unit": "%",
+      "readOnly": false,
+      "visible": false
+    },
+    "oil_content": {
+      "id": "base-objects-v0.1-medium-runtime-oil-content",
+      "type": "number",
+      "title": "Oil content",
+      "description": "The oil content of the medium in %",
+      "unit": "%",
+      "readOnly": false,
+      "visible": false
+    }
+  },
+  "required" : [
+    "medium_name"
+  ]
+}

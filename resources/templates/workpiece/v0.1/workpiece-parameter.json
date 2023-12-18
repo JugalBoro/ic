@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "workpiece/v0.1/workpiece-parameter",
+  "title": "IFF template for Workpiece metadata",
+  "description": "Workpiece template for IFF",
+  "type": "object",
+  "properties": {
+    "parts-maintenance": {
+      "title": "Machine Identification Data",
+      "$ref": "base-objects/v0.1/parts-maintenance.json"
+    },
+    "measurement": {
+      "title": "Measurement",
+      "$ref": "base-objects/v0.1/measurement.json"
+    }
+  }
+}

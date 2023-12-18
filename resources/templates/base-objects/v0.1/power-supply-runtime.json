@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/power-supply-runtime",
+  "title": "Power",
+  "description": "IFF base object for power supply at runtime of a machine",
+  "type": "object",
+  "visible": false,
+  "properties": {
+    "supply_voltage_l1": {
+      "id": "base-objects-v0.1-power-supply-runtime-supply-voltage-l1",
+      "type": "number",
+      "title": "Supply Voltage L1",
+      "description": "Conductor voltage between N (neutral) and L1",
+      "unit": "V",
+      "readOnly": false,
+      "visible": false
+    },
+    "supply_voltage_l2": {
+      "id": "base-objects-v0.1-power-supply-runtime-supply-voltage-l2",
+      "type": "number",
+      "title": "Supply Voltage L2",
+      "description": "Conductor voltage between N (neutral) and L2",
+      "unit": "V",
+      "readOnly": false,
+      "visible": false
+    },
+    "supply_voltage_l3": {
+      "id": "base-objects-v0.1-power-supply-runtime-supply-voltage-l3",
+      "type": "number",
+      "title": "Supply Voltage L3",
+      "description": "Conductor voltage between N (neutral) and L3",
+      "unit": "V",
+      "readOnly": false,
+      "visible": false
+    },
+    "current_strength_l1": {
+      "id": "base-objects-v0.1-power-supply-runtime-current-strength-l1",
+      "type": "number",
+      "title": "Current Strength L1",
+      "description": "Current measurement at L1",
+      "unit": "A",
+      "readOnly": false,
+      "visible": false
+    },
+    "current_strength_l2": {
+      "id": "base-objects-v0.1-power-supply-runtime-current-strength-l2",
+      "type": "number",
+      "title": "Current Strength L2",
+      "description": "Current measurement at L2",
+      "unit": "A",
+      "readOnly": false,
+      "visible": false
+    },
+    "current_strength_l3": {
+      "id": "base-objects-v0.1-power-supply-runtime-current-strength-l3",
+      "type": "number",
+      "title": "Current Strength L3",
+      "description": "Current measurement at L3",
+      "unit": "A",
+      "readOnly": false,
+      "visible": false
+    },
+    "electric_power": {
+      "id": "base-objects-v0.1-power-supply-runtime-electric-power",
+      "type": "number",
+      "title": "Electric Power",
+      "description": "Electrical power",
+      "unit": "W",
+      "readOnly": false,
+      "visible": false
+    }
+  }
+}

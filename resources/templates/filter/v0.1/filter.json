@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "filter/v0.1/filter",
+  "title": "Filter",
+  "description": "Filter template for IFF",
+  "type": "object",
+  "group": "Filter",
+  "metadata": {
+    "type": "filter"
+  },
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "title": "Identification",
+      "$ref": "filter/v0.1/filter-metadata.json"
+    },
+    "parameters": {
+      "type": "object",
+      "title": "Parameters",
+      "$ref": "filter/v0.1/filter-parameter.json"
+    }
+  }
+}

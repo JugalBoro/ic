@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "sensor/v0.1/sensor",
+  "title": "Sensor",
+  "description": "Sensor template for IFF",
+  "type": "object",
+  "group": "Sensor",
+  "metadata": {
+    "type": "sensor"
+  },
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "title": "Identification",
+      "$ref": "sensor/v0.1/sensor-metadata.json"
+    },
+    "parameters": {
+      "type": "object",
+      "title": "Parameters",
+      "$ref": "sensor/v0.1/sensor-parameter.json"
+    }
+  }
+}

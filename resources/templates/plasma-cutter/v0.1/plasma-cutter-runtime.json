@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "plasma-cutter/v0.1/plasma-cutter-runtime",
+    "title": "Plasma Cutter Runtime",
+    "description": "Plasma Cutter Runtime",
+    "type": "object",
+    "visible": false,
+    "properties": {
+        "machine_state": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-machine-state",
+            "type": "array",
+            "title": "Machine Status",
+            "description": "Current status of the machine (Online_Idle, Run, Online_Error, Online_Maintenance, Setup, Testing)",
+            "default": [
+                "Online_Idle",
+                "Run",
+                "Online_Error",
+                "Online_Maintenance",
+                "Setup",
+                "Testing"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_state_from_smartbox": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-machine-state-from-smartbox",
+            "type": "array",
+            "title": "Machine Status from Smartbox",
+            "description": "Current status of the machine according to smartbox (Offline_Idle, Offline_Error, Offline_Maintenance)",
+            "default": [
+                "Offline_Idle",
+                "Offline_Error",
+                "Offline_Maintenance"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_position_x": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-machine-position-x",
+            "type": "number",
+            "title": "Machine Head in X direction",
+            "description": "Position of the machine head in X direction",
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_position_y": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-machine-position-y",
+            "type": "number",
+            "title": "Machine Head in Y direction",
+            "description": "Position of the machine head in Y direction",
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_position_z": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-machine-position-z",
+            "type": "number",
+            "title": "Machine Head in Z direction",
+            "description": "Position of the machine head in Z direction",
+            "readOnly": false,
+            "visible": false
+        },
+        "cutter_head_speed": {
+            "id": "plasma-cutter-v0.1-plasma-cutter-runtime-cutter-head-speed",
+            "type": "number",
+            "title": "Cutter Head Speed",
+            "description": "Cutter head speed",
+            "unit": "mm/s",
+            "readOnly": false,
+            "visible": false
+        }
+    },
+    "required": [
+        "machine_state",
+        "machine_state_from_smartbox"
+    ]
+}

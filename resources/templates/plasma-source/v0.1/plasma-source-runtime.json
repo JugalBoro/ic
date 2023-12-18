@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "plasma-source/v0.1/plasma-source-runtime",
+    "title": "Plasma Source Runtime",
+    "description": "Plasma Source Runtime",
+    "type": "object",
+    "visible": false,
+    "properties": {
+        "machine_state": {
+            "id": "plasma-source-v0.1-plasma-source-runtime-machine-state",
+            "type": "array",
+            "title": "Machine Status",
+            "description": "Current status of the machine (Online_Idle, Run, Online_Error, Online_Maintenance, Setup, Testing)",
+            "default": [
+                "Online_Idle",
+                "Run",
+                "Online_Error",
+                "Online_Maintenance",
+                "Setup",
+                "Testing"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_state_from_smartbox": {
+            "id": "plasma-source-v0.1-plasma-source-runtime-machine-state-from-smartbox",
+            "type": "array",
+            "title": "Machine Status from Smartbox",
+            "description": "Current status of the machine according to smartbox (Offline_Idle, Offline_Error, Offline_Maintenance)",
+            "default": [
+                "Offline_Idle",
+                "Offline_Error",
+                "Offline_Maintenance"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_temperature": {
+            "id": "plasma-source-v0.1-plasma-source-runtime-machine-temperature",
+            "type": "number",
+            "title": "Machine Temperature (°C)",
+            "description": "Machine temperature in °C",
+            "unit": "°C",
+            "readOnly": false,
+            "visible": false
+        }
+    },
+    "required": [
+        "machine_state",
+        "machine_state_from_smartbox"
+    ]
+}

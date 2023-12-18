@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "laser-cutter/v0.1/laser-cutter",
+  "title": "Laser Cutter",
+  "description": "Laser Cutter template for IFF",
+  "type": "object",
+  "group": "Laser Cutter",
+  "metadata": {
+    "type": "laser"
+  },
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "title": "Metadata",
+      "$ref": "laser-cutter/v0.1/laser-cutter-metadata.json"
+    },
+    "parameters": {
+      "type": "object",
+      "title": "Parameters",
+      "$ref": "laser-cutter/v0.1/laser-cutter-parameter.json"
+    }
+  }
+}

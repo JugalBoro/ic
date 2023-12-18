@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "plasma-cutter/v0.1/plasma-cutter-relationships",
+  "title": "Plasma Cutter Parameter",
+  "description": "Plasma Cutter Parameter",
+  "type": "object",
+  "properties": {
+    "filter": {
+      "title": "Filter",
+      "type": "array",
+      "items": {
+        "$ref": "filter/v0.1/filter.json"
+      }
+    },
+    "workpiece": {
+      "title": "Workpiece",
+      "type": "array",
+      "items": {
+        "$ref": "workpiece/v0.1/workpiece.json"
+      }
+    },
+    "plasma_source": {
+      "title": "Plasma Source",
+      "type": "array",
+      "items": {
+        "$ref": "plasma-source/v0.1/plasma-source.json"
+      }
+    }
+  }
+}

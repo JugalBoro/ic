@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/measurement",
+  "title": "Measurement",
+  "description": "Measurement base object, consist of height, width, length, weight",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "height": {
+      "id": "base-objects-v0.1-measurement-height",
+      "type": "number",
+      "title": "Height",
+      "description": "the height in millimeters",
+      "unit": "mm",
+      "placeholder": ""
+    },
+    "width": {
+      "id:": "base-objects-v0.1-measurement-width",
+      "type": "number",
+      "title": "Width",
+      "description": "the width in millimeters",
+      "unit": "mm",
+      "placeholder": ""
+    },
+    "length": {
+      "id": "base-objects-v0.1-measurement-length",
+      "type": "number",
+      "title": "Length",
+      "description": "the length in millimeters",
+      "unit": "mm",
+      "placeholder": ""
+    },
+    "weigth": {
+      "id": "base-objects-v0.1-measurement-weight",
+      "type": "number",
+      "title": "Weight",
+      "description": "the length in kilograms",
+      "unit": "kg"
+    }
+  }
+}

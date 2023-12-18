@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "filter-cartridge/v0.1/filter-cartridge-parameter",
+  "title": "IFF template for filter cartridge metadata",
+  "description": "Filter Cartridge template for IFF",
+  "type": "object",
+  "properties": {
+    "parts_maintenance": {
+      "title": "Machine Identification Data",
+      "$ref": "base-objects/v0.1/parts-maintenance.json"
+    }
+  }
+}

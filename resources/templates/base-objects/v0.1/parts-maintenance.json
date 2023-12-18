@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/parts-maintenance",
+  "title": "Maintenance",
+  "description": "Maintenance of a machine",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "maintenance_interval": {
+      "id": "base-objects-v0.1-parts-maintenance-maintenance_interval",
+      "type": "number",
+      "minimum": 500,
+      "maximum": 600,
+      "description": "the interval for maintainance in hours",
+      "placeholder": ""
+    },
+    "state": {
+      "id": "base-objects-v0.1-parts-maintenance-state",
+      "type": "string",
+      "pattern": "^O(?:FF|N)$",
+      "description": "the current state of the machine",
+      "placeholder": ""
+    },
+    "strength": {
+      "id": "base-objects-v0.1-parts-maintenance-strength",
+      "type": "number",
+      "minimum": 5,
+      "description": "current strength of the machine",
+      "placeholder": ""
+    }
+  }
+}

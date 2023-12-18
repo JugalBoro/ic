@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/security",
+  "title": "Security",
+  "description": "Security",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "protection-class": {
+      "id": "base-objects-v0.1-security-protection-class",
+      "type": "string",
+      "title": "Protection class of mechanical components",
+      "description": "Protection class of mechanical components",
+      "enum": ["test", "test2"],
+      "placeholder": "Select a protection class"
+    }
+  }
+}

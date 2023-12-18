@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "laser-cutter/v0.1/laser-cutter-parameter",
+  "title": "Laser Cutter Parameter",
+  "description": "Laser Cutter Parameter",
+  "type": "object",
+  "properties": {
+    "operation_conditions": {
+      "title": "Operation Conditions",
+      "$ref": "base-objects/v0.1/operation-conditions.json"
+    },
+    "laser_cutter_runtime": {
+      "title": "Laser Cutter Runtime",
+      "$ref": "laser-cutter/v0.1/laser-cutter-runtime.json"
+    },
+    "power_supply": {
+      "title": "Power Supply",
+      "$ref": "base-objects/v0.1/power-supply.json"
+    },
+    "power_supply_runtime": {
+      "title": "Power Supply Runtime",
+      "$ref": "base-objects/v0.1/power-supply-runtime.json"
+    },
+    "medium": {
+      "title": "Medium",
+      "$ref": "base-objects/v0.1/medium.json"
+    },
+    "medium_runtime": {
+      "title": "Medium Runtime",
+      "$ref": "base-objects/v0.1/medium-runtime.json"
+    }
+  }
+}

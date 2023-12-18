@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/machine-maintenance",
+  "title": "Maintenance",
+  "description": "Maintenance of a machine",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "electrical-testing": {
+      "id": "base-objects-v0.1-machine-maintenance-electrical-testing",
+      "type": "number",
+      "title": "Electrical Testing",
+      "description": "Prüfung des ordnungsgemäßen Zustands elektrischer Anlagen und Betriebsmittel (DGUV Vorschrift 3)",
+      "placeholder": "in months"
+    },
+    "maintenance-operating-hours": {
+      "id": "base-objects-v0.1-machine-maintenance-maintenance-operating-hours",
+      "type": "number",
+      "title": "Maintenance (operating hours)",
+      "description": "Wartung der Maschine",
+      "placeholder": "in hours"
+    },
+    "maintenance-static-interval": {
+      "id": "base-objects-v0.1-machine-maintenance-maintenance-static-interval",
+      "type": "number",
+      "title": "Maintenance (static)",
+      "description": "the length in millimeters",
+      "placeholder": "in months"
+    }
+  }
+}

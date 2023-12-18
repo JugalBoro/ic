@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/operation-conditions",
+  "title": "Operation conditions",
+  "description": "IFF base object for operating conditions of a machine",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "ambient_operating_temperature_min": {
+      "id": "base-objects-v0.1-operation-conditions-ambient-operating-temperature-min",
+      "type": "number",
+      "title": "Ambient operating temperature (min.)",
+      "description": "The min temperature in °C",
+      "unit": "°C",
+      "placeholder":"Enter the min temperature in °C",
+      "readOnly": false,
+      "visible": true
+    },
+    "ambient_operating_temperature_max": {
+      "id": "base-objects-v0.1-operation-conditions-ambient-operating-temperature-max",
+      "type": "number",
+      "title": "Ambient operating temperature (max.)",
+      "description": "The max temperature in °C",
+      "unit": "°C",
+      "placeholder":"Enter the max temperature in °C",
+      "readOnly": false,
+      "visible": true
+    },
+    "relative_humidity_min": {
+      "id": "base-objects-v0.1-operation-conditions-relative-humidity-min",
+      "type": "number",
+      "title": "Relative humidity (min.)",
+      "description": "The min humidity in percentage",
+      "unit": "%",
+      "placeholder":"Enter the min humidity in percentage",
+      "readOnly": false,
+      "visible": true
+    },
+    "relative_humidity_max": {
+      "id": "base-objects-v0.1-operation-conditions-relative-humidity-max",
+      "type": "number",
+      "title": "Relative humidity (max.)",
+      "description": "The max humidity in percentage",
+      "unit": "%",
+      "placeholder":"Enter the max humidity in percentage",
+      "readOnly": false,
+      "visible": true
+    },
+    "atmospheric_pressure_min": {
+      "id": "base-objects-v0.1-operation-conditions-atmospheric-pressure-min",
+      "type": "number",
+      "title": "Atmospheric pressure (min.)",
+      "description": "The min pressure in mbar",
+      "unit": "mbar",
+      "placeholder":"Enter the min pressure in mbar",
+      "readOnly": false,
+      "visible": true
+    },
+    "atmospheric_pressure_max": {
+      "id": "base-objects-v0.1-operation-conditions-atmospheric-pressure-max",
+      "type": "number",
+      "title": "Atmospheric pressure (max.)",
+      "description": "the max pressure in mbar",
+      "unit": "mbar",
+      "placeholder":"Enter the max pressure in mbar",
+      "readOnly": false,
+      "visible": true
+    },
+    "dustiness_max": {
+      "id": "base-objects-v0.1-operation-conditions-dustiness-max",
+      "type": "number",
+      "title": "Dust Density (max.)",
+      "description": "The max dust density in mg/m³",
+      "unit": "mg/m³",
+      "placeholder":"Enter the max dust density in mg/m³",
+      "readOnly": false,
+      "visible": true
+    }
+  },
+  "required" : [
+    "ambient_operating_temperature_min",
+    "ambient_operating_temperature_max",
+    "relative_humidity_min",
+    "relative_humidity_max",
+    "atmospheric_pressure_min",
+    "atmospheric_pressure_max"
+  ]
+}

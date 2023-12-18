@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/medium",
+  "title": "Medium",
+  "description": "Material Medium, E.g Gas, Liquids.",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "medium_name": {
+      "id": "base-objects-v0.1-medium-medium-name",
+      "type": "string",
+      "title": "Medium name",
+      "description": "Name of the medium for eg. Oxygen",
+      "placeholder":"Enter the name of the medium",
+      "readOnly": false,
+      "visible": true
+    },
+    "medium_purity": {
+      "id": "base-objects-v0.1-medium-medium-purity",
+      "type": "number",
+      "title": "Medium purity",
+      "description": "Purity of the medium in percentage",
+      "unit" : "%",
+      "placeholder":"Enter the purity of the medium in percentage",
+      "readOnly": false,
+      "visible": true
+    },
+    "medium_usage": {
+      "id": "base-objects-v0.1-medium-medium-usage",
+      "type": "string",
+      "title": "Medium usage",
+      "description": "Usage of the medium",
+      "placeholder":"Enter the usage of the medium",
+      "readOnly": false,
+      "visible": true
+    },
+    "quality": {
+      "id": "base-objects-v0.1-medium-quality",
+      "type": "string",
+      "title": "Medium quality",
+      "description": "Standard description of the quality",
+      "placeholder":"Enter the quality of the medium",
+      "readOnly": false,
+      "visible": true
+    },
+    "medium_pressure_input_min": {
+      "id": "base-objects-v0.1-medium-medium-pressure-input-min",
+      "type": "number",
+      "title": "Medium pressure input (min.)",
+      "description": "The min pressure of the medium in bar",
+      "unit": "bar",
+      "placeholder":"Enter the min pressure in bar",
+      "readOnly": false,
+      "visible": true
+    },
+    "medium_pressure_input_max": {
+      "id": "base-objects-v0.1-medium-medium-pressure-input-max",
+      "type": "number",
+      "title": "Medium pressure input (max.)",
+      "description": "The max pressure of the medium in bar",
+      "unit": "bar",
+      "placeholder":"Enter the max pressure in bar",
+      "readOnly": false,
+      "visible": true
+    },
+    "static_medium_pressure_input_min": {
+      "id": "base-objects-v0.1-medium-static-medium-pressure-input-min",
+      "type": "number",
+      "title": "Static medium pressure input (min.)",
+      "description": "The Static min pressure of the medium in bar",
+      "unit": "bar",
+      "placeholder":"Enter the static min pressure in bar",
+      "readOnly": false,
+      "visible": true
+    },
+    "static_medium_pressure_input_max": {
+      "id": "base-objects-v0.1-medium-static-medium-pressure-input-max",
+      "type": "number",
+      "title": "Static medium pressure input (max.)",
+      "description": "The Static max pressure of the medium in bar",
+      "unit": "bar",
+      "placeholder":"Enter the static max pressure in bar",
+      "readOnly": false,
+      "visible": true
+    },
+    "temperature_min": {
+      "id": "base-objects-v0.1-medium-temperature-min",
+      "type": "number",
+      "title": "Medium temperature (min.)",
+      "description": "The min temperature of the medium in °C",
+      "unit": "°C",
+      "placeholder":"Enter the min temperature in °C",
+      "readOnly": false,
+      "visible": true
+    },
+    "temperature_max": {
+      "id": "base-objects-v0.1-medium-temperature-max",
+      "type": "number",
+      "title": "Medium temperature (max.)",
+      "description": "The max temperature of the medium in °C",
+      "unit": "°C",
+      "placeholder":"Enter the max temperature in °C",
+      "readOnly": false,
+      "visible": true
+    },
+    "volume_flow_min": {
+      "id": "base-objects-v0.1-medium-volume-flow-min",
+      "type": "number",
+      "title": "Medium volume flow (min.)",	
+      "description": "The min volume flow of the medium in m³/h",
+      "unit": "m³/h",
+      "placeholder":"Enter the min volume flow in m³/h",
+      "readOnly": false,
+      "visible": true
+    },
+    "volume_flow_max": {
+      "id": "base-objects-v0.1-medium-volume-flow-max",
+      "type": "number",
+      "title": "Medium volume flow (max.)",
+      "description": "The max volume flow of the medium in m³/h",
+      "unit": "m³/h",
+      "placeholder":"Enter the max volume flow in m³/h",
+      "readOnly": false,
+      "visible": true
+    },
+    "pressure_tolerance_min": {
+      "id": "base-objects-v0.1-medium-pressure-tolerance-min",
+      "type": "number",
+      "title": "Pressure tolerance (min.)",
+      "description": "The min pressure tolerance of the medium in bar",
+      "unit": "bar",
+      "placeholder": "Enter the min pressure tolerance in bar",
+      "readOnly": false,
+      "visible": true
+    },
+    "pressure_tolerance_max": {
+      "id": "base-objects-v0.1-medium-pressure-tolerance-max",
+      "type": "number",
+      "title": "Pressure tolerance (max.)",
+      "description": "The max pressure tolerance of the medium in bar",
+      "unit": "bar",
+      "placeholder":"Enter the max pressure tolerance in bar",
+      "readOnly": false,
+      "visible": true
+    }
+  },
+  "required" : [
+    "medium_name"
+  ]
+}

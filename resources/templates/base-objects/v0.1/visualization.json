@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/visualization",
+  "title": "Visualization",
+  "description": "Visualization of an object.",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "digital_image": {
+      "id": "base-objects-v0.1-visualization-digital-image",
+      "type": "object",
+      "title": "Digital visualization",
+      "contentEncoding": "base64",
+      "contentMediaType": "application/3ds",
+      "description": "The digital visualization of the object.",
+      "placeholder": "Upload a 3D model of the object."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "plasma-cutter/v0.1/plasma-cutter-metadata",
+  "title": "Plasma Cutter Template",
+  "description": "IFF template for Plasma Cutter (metadata)",
+  "type": "object",
+  "properties": {
+    "ifric_identification": {
+      "title": "IFRIC Org Data",
+      "$ref": "base-objects/v0.1/ifric-identification.json"
+    },
+    "machine_identification": {
+      "title": "Machine Identification Data",
+      "$ref": "base-objects/v0.1/machine-identification.json"
+    }
+  }
+}

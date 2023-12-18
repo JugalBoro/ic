@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "0.0.1",
+  "$id": "base-objects/v0.1/work-resource-management",
+  "title": "Work Resource Management",
+  "description": "Work Resource Management",
+  "type": "object",
+  "visible": true,
+  "properties": {
+    "machine-state": {
+      "id": "base-objects-v0.1-work-resource-management-machine-state",
+      "type": "string",
+      "title": "Machine State",
+      "description": "Machine State",
+      "enum": ["idle", "running", "stopped", "error"],
+      "placeholder": "Select a machine state"
+    },
+    "operating-mode": {
+      "id": "base-objects-v0.1-work-resource-management-operating-mode",
+      "type": "string",
+      "title": "Operating Mode",
+      "description": "Operating Mode",
+      "enum": ["manual", "automatic"],
+      "placeholder": "Select an operating mode"
+    },
+    "operating-hours": {
+      "id": "base-objects-v0.1-work-resource-management-operating-hours",
+      "type": "number",
+      "title": "Operating Hours",
+      "description": "Operating Hours",
+      "placeholder": "Enter operating hours"
+    },
+    "runtime": {
+      "id": "base-objects-v0.1-work-resource-management-runtime",
+      "type": "number",
+      "title": "Runtime",
+      "description": "Runtime",
+      "placeholder": "Enter runtime"
+    }
+  }
+}

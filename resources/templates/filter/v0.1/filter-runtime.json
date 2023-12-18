@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "filter/v0.1/filter-runtime",
+    "title": "Filter Runtime",
+    "description": "Filter Runtime",
+    "type": "object",
+    "visible": false,
+    "properties": {
+        "machine_state": {
+            "id": "filter-v0.1-filter-runtime-machine-state",
+            "type": "array",
+            "title": "Machine Status",
+            "description": "Current status of the machine (Online_Idle, Run, Online_Error, Online_Maintenance, Setup, Testing)",
+            "default": [
+                "Online_Idle",
+                "Run",
+                "Online_Error",
+                "Online_Maintenance",
+                "Setup",
+                "Testing"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "machine_state_from_smartbox": {
+            "id": "filter-v0.1-filter-runtime-machine-state-from-smartbox",
+            "type": "array",
+            "title": "Machine Status from Smartbox",
+            "description": "Current status of the machine according to smartbox (Offline_Idle, Offline_Error, Offline_Maintenance)",
+            "default": [
+                "Offline_Idle",
+                "Offline_Error",
+                "Offline_Maintenance"
+            ],
+            "readOnly": false,
+            "visible": false
+        },
+        "operating_hours": {
+            "id": "filter-v0.1-filter-runtime-operating-hours",
+            "type": "number",
+            "title": "Operating Hours",
+            "description": "Total operating hours of the machine",
+            "unit": "h",
+            "readOnly": false,
+            "visible": false
+        },
+        "cleaning_cycles": {
+            "id": "filter-v0.1-filter-runtime-cleaning-cycles",
+            "type": "number",
+            "title": "Cleaning Cycles",
+            "description": "Total cleaning cycles of the machine",
+            "readOnly": false,
+            "visible": false
+        }
+    },
+    "required": [
+        "machine_state",
+        "machine_state_from_smartbox"
+    ]
+}
